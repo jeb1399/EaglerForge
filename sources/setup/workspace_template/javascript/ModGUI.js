@@ -23,12 +23,12 @@ function displayGui() {
     title.style = "text-shadow: 0px 0px 4px;";
     title.innerHTML = "Mod Manager";
     var closeButton = document.createElement("a");
-    closeButton.style = `margin-left: 2rem; color: red;`;
+    closeButton.style = `position: fixed; top: 10px; right: 10px; margin: 0; color: red;`;
     closeButton.href = "javascript:void(0)";
     closeButton.addEventListener("click", () => {
       document.querySelector("#eaglerpl_gui").remove();
     });
-    closeButton.innerHTML = "[X]";
+    closeButton.innerHTML = "[Close]";
     title.appendChild(closeButton);
     container.appendChild(title);
 
